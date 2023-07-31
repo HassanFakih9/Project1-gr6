@@ -1,10 +1,10 @@
 .firstdiv {
     background-image: url('images/hero_2.jpg');
     background-repeat: no-repeat;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 500px;
     background-size: cover;
-    
+
 }
 
 .firstdiv h1,
@@ -12,7 +12,39 @@ a {
     color: white;
 }
 
-.firstdiv a:active,
-a:visited {
-    color: orange;
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.line {
+
+    width: calc(300px*1.41);
+
+
+    border-bottom: 3px solid rgb(1, 68, 12);
+
+    transform: rotate(-20deg);
+
+    transform-origin: right;
+
 }
