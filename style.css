@@ -1,0 +1,18 @@
+.firstdiv {
+    background-image: url('images/hero_2.jpg');
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+    background-size: cover;
+    
+}
+
+.firstdiv h1,
+a {
+    color: white;
+}
+
+.firstdiv a:active,
+a:visited {
+    color: orange;
+}
