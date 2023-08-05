@@ -1,48 +1,116 @@
-
-.firstdiv {
-  background-image: url('images/hero_2.jpg');
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 1000px;
-  background-size: cover;
-  display: flex;
- align-items: center;
-
-
-
+*{
+  margin: 0;
+  padding: 0;
 }
+.container {
+  background-image: url('images/hero_2.jpg ');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  center center;
+  
+ 
 
-.firstdivstyle {
-  position: absolute;
-  left: 0;
-  top: 0;
+   width: 100vw; 
+  height: 80vh;
+  border: 5px solid black;
   clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 90%);
 }
 
-.firstdiv h1,
-a {
+.getstarted {
   color: white;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, .25); 
+  height: 5vh;
+  width:8%;
+  margin-top: 5%;
+  font-size: 1.1em;
+/* rgba for transparency */
+}
+
+.banner {
+  font-size: 5em;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin-top: 15%;
+
+}
+
+.text {
+  color:white;
+  text-align: center;
+  /* margin-top: -3%; */
+  font-size: 1.1em;
+}
+
+.contactus {
+  background-color: orange;
+  height: 4%;
+  color: white;
+  width: fit-content;
+}
+
+.firstdiv {
+
+  width: 100vw;
+  height: fit-content;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  margin-top: 5%;
+
+
+  margin-bottom: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 90%); */
+
+
+
+
+}
+
+
+.firstdiv h1 {
+  color: white;
+  font-size: 2em;
+}
+
+.firstdiv nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.firstdiv a {
+  color: white;
+  text-decoration: none;
+  margin: 2%;
+
+
 }
 
 .seconddiv {
   background-color: rgb(230, 239, 247);
-  background-size: cover;
-  margin-left:0px;
-
+  /* position: relative; */
+  margin-left: 0px;
+  /* z-index: 100; */
   width: 100vw;
   height: 1000px;
-
-
-
-}
-.secondivstyle{
-  /* clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 90%); */
-  clip-path: polygon(0 90%, 100% 70%, 100% 100%,0 100%);
+  border: 5px solid black;
+  clip-path: polygon(0 90%, 100% 70%, 100% 100%, 0 100%);
   left: 0;
-  top: 0;
-  margin-top: -22px;
+  /* display: none; */
+ 
+
+
 
 }
+
+
 
 a:hover {
   color: red;
@@ -50,13 +118,17 @@ a:hover {
   text-decoration: underline;
 }
 
-a:active {
-  color: pink;
-  background-color: transparent;
-  text-decoration: underline;
-}
 
 a:focus {
   color: orange;
 
+}
+@media screen and (max-width: 488px) {
+  
+ .banner{
+  font-size: 2em;
+ }
+ .getstarted{
+  width: 15%;
+ }
 }
