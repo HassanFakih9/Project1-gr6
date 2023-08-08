@@ -178,9 +178,7 @@ zpara {
   width: max-content;
   height:max-content;
   width: auto;
-  background-color: whitesmoke;
   margin: 0 120ev 0 120ev;
-  /* clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%); */
   clip-path: polygon(50% 4.39%, 100% 0%, 100% 92.25%, 0% 100%, 0% 7.27%);
   background-color: #f6f7f6
   
