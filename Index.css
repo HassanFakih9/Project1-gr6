@@ -1,0 +1,159 @@
+.Second-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 50px; 
+}
+
+.AboutUs-Container{
+     max-width: 300px ;
+     padding: 5%;
+     
+}
+
+.AboutUs-Container p {
+    padding-bottom: 50px;
+
+}
+
+
+.Quick-Container{
+padding: 5%;
+margin-top: -10%;
+    
+}
+
+.Quick-Container a {
+    display: list-item;
+    list-style: none;
+    padding-bottom: 10%;
+    color: orange;
+}
+
+
+.Subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    padding: 50px; 
+ 
+}
+
+.Subscribe p {
+    justify-content: center;
+    max-width: 550px;
+}
+
+form {
+    display: flex;
+    align-items: center; 
+}
+
+#email{ 
+    width: 350px;
+    height: 30px;
+    margin-right: 10px;
+  
+}
+ #button{
+    width:170px;
+    height: 36px;
+    background-color: orange;
+    color: rgb(250, 250, 250);
+    border:none;
+   
+
+ }
+.Copy-Rights{
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+img{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+}
+
+
+@media (max-width: 500px) {
+    #email{ 
+        width: 300px;
+        height: 30px;
+        margin-right: 10px;
+      
+    }
+     #button{
+        width:100px;
+        height: 36px;
+        background-color: orange;
+        color: rgb(250, 250, 250);
+        border:none;
+       
+    
+     }
+     .Second-Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        padding: 50px; 
+    }
+
+    
+    .AboutUs-Container{
+        max-width: 350px ;
+        text-align: center;}
+
+     img{
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            
+        
+        }
+        
+  .Opening-Contact-Container{
+    display: flex;
+    padding: 10%;
+    justify-content: center; 
+   
+
+  }
+
+  .images{
+    padding-top: -20% ;
+  }
+
+  .Opening-Container{
+    padding-left: 20%;
+  }
+
+  .Contactinfo-Container{
+    padding-left: 20%;
+  }
+
+  .Quick-Container a{
+    display: inline;
+    padding:5px;
+  }
+
+  .Quick-Container{
+    padding-top: 10%;
+  }
+
+  .Copy-Rights{
+    display: flex;
+    padding-top:5px;
+    align-items: center;
+    justify-content: center; 
+
+}
+    
+}
