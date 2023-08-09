@@ -1,0 +1,173 @@
+
+    
+
+
+.txt {
+    color: grey;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    /* Create 4 columns with equal width */
+    grid-template-rows: repeat(4, 200px);
+    /* Create 4 rows with equal height */
+    background-color: none;
+    padding: 10%;
+
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+
+
+
+.mimage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 0;
+}
+
+.mh1 {
+    color: orangered;
+    font-size: medium;
+}
+
+.mh {
+    color: black;
+    font-style: bold;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mbutton {
+    width: 50px;
+    ;
+    height: 1px;
+    background-color: orange;
+    border: none;
+    border-radius: 50px;
+}
+
+.mbutton,
+p {
+    margin-bottom: -50px;
+    /*space verticallement*/}
+
+    .mfont{
+        font-size: medium;
+    }
+    .txt{
+        font-size: small;
+    }
+    .mh1{
+        font-size: large;
+        margin-top: auto;
+
+    }
+    .main {
+display: flex
+}
+.mh4 {
+text-align: center;
+font-weight: bold;
+margin-bottom: 20px;
+}
+.mh6{
+color: grey;
+
+}
+
+
+.mimg2 {
+
+width: 50px;
+/* Adjust the width as needed */
+height: 50px;
+/* Adjust the height as needed */
+border-radius: 50%;
+/* Makes the corners round */
+overflow: hidden;
+/* Clips the image to the rounded border */
+}
+
+
+.mtxt1 {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+.mimg img {
+max-width: 100%;
+height: auto;
+}
+
+.container1 {
+width: 500px;
+height: 500px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+line-height: 1.5;
+
+}
+.mh1,.txt {
+    margin-bottom: 10px;
+    /*space verticallement*/
+}
+.mcontact, .mtxt{
+
+margin-right: 15px; /* to space between the pic and the text horizontally*/
+}
+.mh4 ,.container1{
+margin-bottom: 90px; /*space verticallement*/
+}
+
+.mtxt1 ,.main{
+margin-bottom: 10px; /*space verticallement*/
+}
+.mbutton{
+width: 50px; ;
+height: 1px;
+background-color: orange;
+border:none;
+border-radius: 50px;
+}
+.mbutton, h1{
+margin-bottom: -50px; /*space verticallement*/
+}
+
+
+@media screen and (max-width: 500px) {
+           
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(8,auto);
+        background-color: none;
+    
+    }
+    
+    
+    .mimage {
+        width: 50%;
+        height: 50%;
+        margin: 0 0;
+    }
+    
+    
+              
+                .m1 {
+                    padding: 20px;
+                }
+            }
