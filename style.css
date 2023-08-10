@@ -193,6 +193,7 @@ body {
   height: 500px;
   background-size: cover;
   clip-path: polygon(50% 0%, 100% 0%, 100% 80.25%, 0% 100%, 0% 0%);
+}
 
 
 
@@ -361,9 +362,9 @@ body {
     .icons{
         margin-top: 20%;
     }
-   
+}  
 
-a:link {
+/* a:link {
   color: green;
   background-color: transparent;
   text-decoration: none;
@@ -378,7 +379,7 @@ a:hover {
 a:focus {
   color: orange;
 
-}
+} */
 
 /* End Hassan CSS */
 
