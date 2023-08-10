@@ -252,14 +252,22 @@ body {
 
 
     }
+  
 
     .getstarted {
         width: 20vw;
         font-size: 1em;
+        margin-bottom: 8%;
     }
 
     .firstdiv {
-        height: 5vh;
+        height: auto;
+        flex-wrap: wrap;
+        
+        
+    }
+    .banner{
+       margin-top: 15vh;
     }
 
     .firstdiv a {
@@ -291,6 +299,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: 5vh;
+        justify-content: space-evenly;
+        
         /* clip-path: none; */
     }
 
@@ -299,6 +309,7 @@ body {
         flex-direction: column;
         margin-top: 15%;
         gap: 3vh;
+        padding:0;
     }
 
     .bgdiv {
@@ -326,6 +337,40 @@ body {
         width: 5vw;
         height: 5vh;
     }
+    .navbar{
+        width:80%;
+        align-self: center;
+    }
+
+}
+@media only screen and (min-width: 500px) and (max-width:1000px) 
+{
+    .bg2 {
+
+        height: 100%;
+       
+        overflow: visible;
+        /* clip-path: none; */
+        margin-top: -10%;
+    }
+    .bg1 {
+        text-align: center;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        justify-content: space-evenly;
+        /* clip-path: none; */
+    }
+    .getstarted {
+        width: 20vw;
+        font-size: 1em;
+        margin-bottom: 10%;
+    }
+    .icons{
+        margin-top: 20%;
+    }
+   
 
 }
 
