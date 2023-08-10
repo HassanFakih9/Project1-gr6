@@ -1,7 +1,3 @@
-
-    
-
-
 .txt {
     color: grey;
 }
@@ -13,7 +9,7 @@
     grid-template-rows: repeat(4, 200px);
     /* Create 4 rows with equal height */
     background-color: none;
-    padding: 10%;
+    padding: 20%;
 
 }
 
@@ -24,8 +20,8 @@
     font-size: 30px;
     text-align: center;
     display: flex;
-flex-direction: column;
-justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -37,6 +33,8 @@ justify-content: space-between;
     display: block;
     margin: 0 0;
 }
+
+
 
 .mh1 {
     color: orangered;
@@ -64,110 +62,147 @@ justify-content: space-between;
 .mbutton,
 p {
     margin-bottom: -50px;
-    /*space verticallement*/}
-
-    .mfont{
-        font-size: medium;
-    }
-    .txt{
-        font-size: small;
-    }
-    .mh1{
-        font-size: large;
-        margin-top: auto;
-
-    }
-    .main {
-display: flex
+    /*space verticallement*/
 }
+
+.mfont {
+    font-size: medium;
+}
+
+.txt {
+    font-size: small;
+}
+
+.mh1 {
+    font-size: large;
+    margin-top: auto;
+
+}
+
+.main {
+    display: flex
+}
+
 .mh4 {
-text-align: center;
-font-weight: bold;
-margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
-.mh6{
-color: grey;
+
+.mh6 {
+    color: grey;
 
 }
 
 
 .mimg2 {
 
-width: 50px;
-/* Adjust the width as needed */
-height: 50px;
-/* Adjust the height as needed */
-border-radius: 50%;
-/* Makes the corners round */
-overflow: hidden;
-/* Clips the image to the rounded border */
+    width: 50px;
+    /* Adjust the width as needed */
+    height: 50px;
+    /* Adjust the height as needed */
+    border-radius: 50%;
+    /* Makes the corners round */
+    overflow: hidden;
+    /* Clips the image to the rounded border */
 }
 
 
 .mtxt1 {
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .mimg img {
-max-width: 100%;
-height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .container1 {
-width: 500px;
-height: 500px;
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-line-height: 1.5;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.5;
 
 }
-.mh1,.txt {
+
+.mh1,
+.txt {
     margin-bottom: 10px;
     /*space verticallement*/
 }
-.mcontact, .mtxt{
 
-margin-right: 15px; /* to space between the pic and the text horizontally*/
-}
-.mh4 ,.container1{
-margin-bottom: 90px; /*space verticallement*/
+.mcontact,
+.mtxt {
+
+    margin-right: 15px;
+    /* to space between the pic and the text horizontally*/
 }
 
-.mtxt1 ,.main{
-margin-bottom: 10px; /*space verticallement*/
+.mh4,
+.container1 {
+    margin-bottom: 90px;
+    /*space verticallement*/
 }
-.mbutton{
-width: 50px; ;
-height: 1px;
-background-color: orange;
-border:none;
-border-radius: 50px;
+
+.mtxt1,
+.main {
+    margin-bottom: 10px;
+    /*space verticallement*/
 }
-.mbutton, h1{
-margin-bottom: -50px; /*space verticallement*/
+
+.mbutton {
+    width: 50px;
+    ;
+    height: 1px;
+    background-color: orange;
+    border: none;
+    border-radius: 50px;
+}
+
+.mbutton,
+h1 {
+    margin-bottom: -50px;
+    /*space verticallement*/
 }
 
 
 @media screen and (max-width: 500px) {
-           
     .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(8,auto);
+        /* Simplified grid layout */
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(8, auto);
         background-color: none;
-    
+        padding: 5%;
     }
-    
-    
+
     .mimage {
-        width: 50%;
-        height: 50%;
-        margin: 0 0;
+        width: 100%;
+        height: auto;
     }
-    
-    
-              
-                .m1 {
-                    padding: 20px;
-                }
-            }
+
+    /* Adjust font sizes, margins, and other styles as needed */
+
+    .container1 {
+        /* Adjust width and margins for better mobile display */
+        width: 90%; /* Adjust width as needed */
+        margin: 0 auto;
+    }
+
+    /* Use flexbox for horizontal spacing */
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Increase text line height for better readability */
+    .mtxt, .mtxt1 {
+        line-height: 1.6;
+    }
+
+    /* Adjust other styles as needed for better mobile display */
+}
