@@ -1,8 +1,8 @@
-.txt {
+.mtxt {
     color: grey;
 }
 
-.grid-container {
+.mgrid-container {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     /* Create 4 columns with equal width */
@@ -13,7 +13,7 @@
 
 }
 
-.grid-item {
+.mgrid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
     padding: 20px;
@@ -69,7 +69,7 @@ p {
     font-size: medium;
 }
 
-.txt {
+.mtxt {
     font-size: small;
 }
 
@@ -117,7 +117,7 @@ p {
     height: auto;
 }
 
-.container1 {
+.mcontainer1 {
     width: 500px;
     height: 500px;
     position: absolute;
@@ -128,13 +128,18 @@ p {
 }
 
 .mh1,
-.txt {
+.mtxt2 {
     margin-bottom: 10px;
     /*space verticallement*/
 }
 
+.mmain2{
+    display: flex;
+}
+
+
 .mcontact,
-.mtxt {
+.mtxt2 {
 
     margin-right: 15px;
     /* to space between the pic and the text horizontally*/
@@ -184,14 +189,14 @@ h1 {
 
     /* Adjust font sizes, margins, and other styles as needed */
 
-    .container1 {
+    .mcontainer1 {
         /* Adjust width and margins for better mobile display */
         width: 90%; /* Adjust width as needed */
         margin: 0 auto;
     }
 
     /* Use flexbox for horizontal spacing */
-    .main {
+    .mmain {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -200,9 +205,27 @@ h1 {
     }
 
     /* Increase text line height for better readability */
-    .mtxt, .mtxt1 {
+    .mtxt2, .mtxt1 {
         line-height: 1.6;
     }
 
     /* Adjust other styles as needed for better mobile display */
 }
+
+
+/*container */
+.card {
+    width: 33%;
+    justify-content: flex-start;
+    
+  }
+
+  
+  .card2 {
+    width: 33%;
+    justify-content:center;
+  }
+  .card3{
+    width: 33%;
+    justify-content:flex-end
+  }
