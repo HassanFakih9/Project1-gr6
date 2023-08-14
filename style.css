@@ -1,29 +1,29 @@
-.Second-Container{
+.A-Second-Container{
     display: flex;
     align-items: center;
     justify-content: center; 
     padding: 50px; 
 }
 
-.AboutUs-Container{
+.A-AboutUs-Container{
      max-width: 300px ;
      padding: 5%;
      
 }
 
-.AboutUs-Container p {
+.A-AboutUs-Container p {
     padding-bottom: 50px;
 
 }
 
 
-.Quick-Container{
+.A-Quick-Container{
 padding: 5%;
 margin-top: -10%;
     
 }
 
-.Quick-Container a {
+.A-Quick-Container a {
     display: list-item;
     list-style: none;
     padding-bottom: 10%;
@@ -31,7 +31,7 @@ margin-top: -10%;
 }
 
 
-.Subscribe {
+.A-Subscribe {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,23 +41,22 @@ margin-top: -10%;
  
 }
 
-.Subscribe p {
+.A-Subscribe p {
     justify-content: center;
     max-width: 550px;
 }
-
-form {
+.A-Form {
     display: flex;
     align-items: center; 
 }
 
-#email{ 
+#A-email{ 
     width: 350px;
     height: 30px;
     margin-right: 10px;
   
 }
- #button{
+ #A-button{
     width:170px;
     height: 36px;
     background-color: orange;
@@ -66,7 +65,7 @@ form {
    
 
  }
-.Copy-Rights{
+.A-Copy-Rights{
     display: flex;
     padding-top: 80px;
     align-items: center;
@@ -74,7 +73,7 @@ form {
 
 }
 
-.imgs{
+.A-imgs{
     width: 20px;
     height: 20px;
     padding: 5px;
@@ -83,13 +82,13 @@ form {
 
 
 @media (max-width: 500px) {
-    #email{ 
+    #A-email{ 
         width: 300px;
         height: 30px;
         margin-right: 10px;
       
     }
-     #button{
+     #A-button{
         width:100px;
         height: 36px;
         background-color: orange;
@@ -98,7 +97,7 @@ form {
        
     
      }
-     .Second-Container{
+     .A-Second-Container{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -107,11 +106,11 @@ form {
     }
 
     
-    .AboutUs-Container{
+    .A-AboutUs-Container{
         max-width: 350px ;
         text-align: center;}
 
-     .imgs{
+     .A-imgs{
             width: 20px;
             height: 20px;
             padding: 5px;
@@ -119,7 +118,7 @@ form {
         
         }
         
-  .Opening-Contact-Container{
+  .A-Opening-Contact-Container{
     display: flex;
     padding: 10%;
     justify-content: center; 
@@ -127,28 +126,28 @@ form {
 
   }
 
-  .images{
+  .A-images{
     padding-top: -20% ;
   }
 
-  .Opening-Container{
+  .A-Opening-Container{
     padding-left: 20%;
   }
 
-  .Contactinfo-Container{
+  .A-Contactinfo-Container{
     padding-left: 20%;
   }
 
-  .Quick-Container a{
+  .A-Quick-Container a{
     display: inline;
     padding:5px;
   }
 
-  .Quick-Container{
+  .A-Quick-Container{
     padding-top: 10%;
   }
 
-  .Copy-Rights{
+  .A-Copy-Rights{
     display: flex;
     padding-top:5px;
     align-items: center;
