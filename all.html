@@ -1,0 +1,738 @@
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 100vw;
+
+}
+
+.bg1 {
+    background: url(hero_2.jpg) no-repeat;
+    background-size: 100vw 100%;
+    height: 60%;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+    text-align: center;
+
+
+
+
+}
+
+.bg2 {
+    background-color: whitesmoke;
+    background-size: 100vw 100%;
+    height: 40%;
+    width: 100vw;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    overflow: visible;
+    margin-top: -5%;
+
+
+
+
+}
+
+.icons {
+
+    height: auto;
+    width: 100vw;
+    margin-top: 12%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    overflow: visible;
+    gap: 5%;
+
+
+}
+
+.titletext {
+    color: orange;
+    /* align-self: flex-start; */
+}
+
+.iconstext {
+    color: grey;
+}
+
+.bgdiv {
+    width: 40%;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+
+    height: 40%;
+    background-color: orange;
+    clip-path: circle();
+
+}
+
+.svgitem {
+    width: 50%;
+    height: 50%;
+
+
+  
+
+
+
+}
+
+.grid-item1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    overflow: visible;
+
+
+
+}
+
+.grid-item2 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15%;
+    overflow: visible;
+
+
+}
+
+.grid-item3 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15%;
+    overflow: visible;
+
+}
+
+.grid-item4 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15%;
+    overflow: visible;
+
+}
+
+.getstarted {
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, .25);
+    height: 5vh;
+    width: 8%;
+    margin-top: 5%;
+    font-size: 1.1em;
+    /* rgba for transparency */
+}
+
+.banner {
+    font-size: 5em;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-top: 15%;
+
+}
+
+.text {
+    color: white;
+    text-align: center;
+
+    font-size: 1.1em;
+}
+
+.contactus {
+    background-color: orange;
+    height: 6%;
+    color: white;
+    width: fit-content;
+    font-size: 1.1em;
+
+}
+
+.firstdiv {
+
+    width: 100vw;
+    height: fit-content;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-top: 5%;
+
+
+    margin-bottom: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 90%); */
+
+
+
+
+}
+
+.firstdiv a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+.firstdiv a:focus {
+    color: orange;
+
+}
+
+.firstdiv h1 {
+    color: white;
+    font-size: 2em;
+}
+
+.firstdiv nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.firstdiv a {
+    color: white;
+    text-decoration: none;
+    margin: 2%;
+    font-size: 1.1em;
+
+
+
+}
+/*footer style*/
+/*.Second-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 50px; 
+}
+
+.AboutUs-Container{
+     max-width: 300px ;
+     padding: 5%;
+     
+}
+
+.AboutUs-Container p {
+    padding-bottom: 50px;
+
+}
+
+
+.Quick-Container{
+padding: 5%;
+margin-top: -10%;
+    
+}
+
+.Quick-Container a {
+    display: list-item;
+    list-style: none;
+    padding-bottom: 10%;
+    color: orange;
+}
+
+
+.Subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    padding: 50px; 
+ 
+}
+
+.Subscribe p {
+    justify-content: center;
+    max-width: 550px;
+}
+
+form {
+    display: flex;
+    align-items: center; 
+}
+
+#email{ 
+    width: 350px;
+    height: 30px;
+    margin-right: 10px;
+  
+}
+ #button{
+    width:170px;
+    height: 36px;
+    background-color: orange;
+    color: rgb(250, 250, 250);
+    border:none;
+   
+
+ }
+.Copy-Rights{
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.imgs{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+}*/
+
+
+@media (max-width: 500px) {
+    #email{ 
+        width: 300px;
+        height: 30px;
+        margin-right: 10px;
+      
+    }
+     #button{
+        width:100px;
+        height: 36px;
+        background-color: orange;
+        color: rgb(250, 250, 250);
+        border:none;
+       
+    
+     }
+     .Second-Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        padding: 50px; 
+    }
+
+    
+    .AboutUs-Container{
+        max-width: 350px ;
+        text-align: center;}
+
+     .imgs{
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            
+        
+        }
+        
+  .Opening-Contact-Container{
+    display: flex;
+    padding: 10%;
+    justify-content: center; 
+   
+
+  }
+
+  .images{
+    padding-top: -20% ;
+  }
+
+  .Opening-Container{
+    padding-left: 20%;
+  }
+
+  .Contactinfo-Container{
+    padding-left: 20%;
+  }
+
+  .Quick-Container a{
+    display: inline;
+    padding:5px;
+  }
+
+  .Quick-Container{
+    padding-top: 10%;
+  }
+
+  .Copy-Rights{
+    display: flex;
+    padding-top:5px;
+    align-items: center;
+    justify-content: center; 
+
+}
+    
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .banner {
+        font-size: 2em;
+    }
+
+    .text {
+        /* width: fit-content; */
+
+        text-align: center;
+
+
+    }
+
+    .getstarted {
+        width: 20vw;
+        font-size: 1em;
+    }
+
+    .firstdiv {
+        height: 5vh;
+    }
+
+    .firstdiv a {
+        color: rgb(54, 52, 52);
+        font-size: 1em;
+
+
+
+
+    }
+
+    .container {
+        height: 1100px;
+        /* text-align: center; */
+    }
+
+    .bg2 {
+
+        height: auto;
+        clip-path: polygon(0 4.28%, 100% 0, 100% 100%, 0 100%);
+        overflow: visible;
+        /* clip-path: none; */
+        margin-top: -8%;
+    }
+
+    .bg1 {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        /* clip-path: none; */
+    }
+
+    .icons {
+        height: max-content;
+        flex-direction: column;
+        margin-top: 15%;
+        gap: 3vh;
+    }
+
+    .bgdiv {
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .grid-item1 {
+        gap: 4vh;
+    }
+
+    .grid-item2 {
+        gap: 4vh;
+    }
+
+    .grid-item3 {
+        gap: 4vh;
+    }
+
+    .grid-item4 {
+        gap: 4vh;
+    }
+
+    .svgitem {
+        width: 5vw;
+        height: 5vh;
+    }
+
+}
+
+/* form css*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ce9d72;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color:#f3e5da ;
+}
+
+input[type=submit] {
+  background-color: #ca740a;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#ca740a ;
+}
+
+.mmain {
+  display: flex;
+  height: 100vh;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #915d1e9c;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.container label, .container input, .container textarea, .container input[type="submit"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  flex: 1;
+  background-image: url('chef1.jpg'); /* Replace with your image URL */
+  background-size: cover;
+}
+
+</style>
+<body>
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="bg1">
+            <div class="firstdiv ">
+                <h1>Foody </h1>
+                <nav> <a href="#">Home</a>
+                    <a href="#">Recipes</a>
+                    <a href="#">Services</a>
+                    <a href="#">About</a>
+                    <a href="#">News</a>
+                </nav>
+                <button class="contactus">Contact us</button>
+
+            </div>
+            <p class="banner">
+                Contact Us
+            </p>
+            <p class="text">
+                "Share Your Vision, We'll Bring it to Life."
+
+            </p>
+
+            <div style="text-align: center; ">
+                <button class="getstarted">Get started</button>
+            </div>
+        </div>
+
+        <div class="bg2">
+            <div class="icons">
+
+                <div class="grid-item1">
+
+                    <div class="bgdiv"><img src="plate.svg" class="svgitem"></div>
+                    <p class="titletext">
+                        Birthdays
+                    </p>
+                    <p class="iconstext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita?
+                        Temporibus repellendus repellat.
+                    </p>
+
+                </div>
+                <div class="grid-item2">
+
+
+                    <div class="bgdiv"><img src="fish.svg" class="svgitem">
+                    </div>
+                    <p class="titletext">
+                      weddings                    </p>
+                    <p class="iconstext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita?
+                        Temporibus repellendus repellat.
+                    </p>
+
+
+                </div>
+                <div class="grid-item3">
+
+
+                    <!-- <svg></svg> -->
+                    <div class="bgdiv"><img src="coffee.svg" class="svgitem">
+                    </div>
+                    <p class="titletext">
+                        parties
+                    </p>
+                    <p class="iconstext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                        expedita?
+                        Temporibus repellendus repellat.
+                    </p>
+                </div>
+
+                <div class="grid-item4">
+
+                    <div class="bgdiv"> <img src="meat.svg" class="svgitem">
+                    </div>
+                    <p class="titletext">
+                        Graduation
+                    </p>
+                    <p class="iconstext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                        expedita?
+                        Temporibus repellendus repellat.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- form block-->
+    <div class="mmain">
+        <div class="contact-form">
+          <h3>Contact Form</h3>
+          <div class="container">
+            <form action="/action_page.php">
+              <label for="name"> Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+      
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phonenb" name="phone" placeholder="Your phone number">
+      
+              <label for="subject">What's on your mind?</label>
+              <textarea id="subject" name="subject" placeholder="tell us.." style="height:200px"></textarea>
+      
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        <div class="image-container"></div>
+      </div>
+
+      <!--footer code-->
+      <div class="Subscribe">
+
+        <b> Subscribe NewsLetter </b>
+
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Impedit minima dolor necessitatibus veritatis quos voluptates! Tempora, 
+             vel accusantium. </p>
+
+        <form>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              <button type="submit" id="button">SUBSCRIBE</button>
+        </form> 
+
+    </div>
+
+        <div class="Second-Container">
+
+        <div class="AboutUs-Container">
+            <b> About Us </b>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Beatae dolore, voluptatem quos corrupti repellendus praesentium deleniti
+                 inventore quaerat voluptatum facilis! 
+            </p>
+
+            <p> <img class="imgs" src="Images/twiter.png" alt="">
+                <img class="imgs" src="Images/fb.png" alt="">
+                <img class="imgs" src="Images/in.png" alt="">
+                <img class="imgs" src="Images/insta.png" alt="">
+            </p>
+ 
+        </div>
+
+        <div class="Opening-Contact-Container">
+            
+            <div class="Opening-Container">
+                <b>Opening Hours</b>
+                <p> Sunday-Thursday <br/>
+                      5AM-10PM        </p>
+            </div>
+
+            <div class="Contactinfo-Container">
+                <b> Contact Info </b>
+                <p> Address: <br/>
+                      34 Street Name, City name Here, United State</p>
+                
+                <p>Phone: <br/>
+                +961 898 763 761</p>
+
+                <p>Email: <br/>
+                    info@yourdomaine.com <p>
+           </div>
+
+        </div>
+
+        <div class="Quick-Container">
+            <b> Quick Links </b> <br/>
+            <p>
+            <a href="">About</a>
+            <a href="">Terms Of use </a>
+            <a href="">Disclaimers </a>
+            <a href=""> Contact </a></p>
+        </div>
+      
+        </div>
+
+        <div class="Copy-Rights"> CopyRight @2023 All Rights Reserved </div>
+
+    
+</footer>
+</body>
+
+</html>
