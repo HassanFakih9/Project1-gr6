@@ -1,21 +1,36 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var subscribeButton = document.getElementById('A-button');
-
-    subscribeButton.addEventListener('click', function (event) {
-        event.preventDefault(); 
-         
-        var messageElement = document.createElement('div');
-        messageElement.classList.add('message');
-        messageElement.innerText = 'Thank you for subscribing!';
-        messageElement.style.color = 'orange'; 
-        messageElement.style.fontSize = '30px'; 
-        messageElement.style.paddingTop= '3%' ;
-        
-        var form = document.querySelector('.A-Form');
-        form.parentNode.insertBefore(messageElement, form.nextSibling);
-        
-        setTimeout(function () {
-            messageElement.remove();
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector(".A-Form");
+    const emailInput = document.getElementById("A-email");
+    const messageContainer = document.querySelector(".A-Subscribe-message-container");
+    
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const emailValue = emailInput.value;
+      
+      if (validateEmail(emailValue)) {
+        showMessage("Thank you for subscribing!", "orange");
+        setTimeout(function() {
+          messageContainer.innerHTML = "";
         }, 5000);
+      } else {
+        showMessage("The email you entered is invalid. Please try again.", "orange");
+      }
     });
-});
+    
+    emailInput.addEventListener("input", function() {
+      messageContainer.innerHTML = "";
+    });
+    
+    function validateEmail(email) {
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return regex.test(email);
+    }
+    
+    function showMessage(message, color) {
+      const messageElement = document.createElement("p");
+      messageElement.textContent = message;
+      messageElement.style.color = color;
+      messageContainer.innerHTML = "";
+      messageContainer.appendChild(messageElement);
+    }
+  });
