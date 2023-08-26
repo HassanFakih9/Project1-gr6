@@ -19,7 +19,7 @@
 .h_bg1 {
     background: url(images/hero_2.jpg) no-repeat;
     background-size: cover;
-    /* height: 60%; */
+    height: 70vh;
     width: 100vw;
     position: relative;
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
@@ -73,7 +73,7 @@
 
     height: auto;
     width: 100vw;
-    margin-top: 5%;
+    margin-top: 8%;
 
     padding-left: 5%;
     padding-right: 5%;
@@ -125,6 +125,7 @@
 }
 
 .h_grid-item {
+    flex:1;
     display: flex;
     flex-direction: column;
     gap: 15%;
@@ -298,7 +299,7 @@
 
     .h_bg1 {
         text-align: center;
-        height: 80vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         gap: 5vh;
@@ -361,6 +362,7 @@
         flex-direction: column;
         gap: 4vh;
         justify-content: space-evenly;
+        height:80vh;
 
     }
 
@@ -582,27 +584,30 @@ input[type=submit]:hover {
 .mmain {
 
     display: flex;
-    /* position: relative; */
-
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: center;
+   
 
 
 
 }
 
-.form-container {
+/* .form-container {
     width: 50%;
-    display: flex;
+    flex:1;
+     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
+    justify-content: center; 
+    margin: 0 auto;}
+*/
 
 .contact-form {
-    /* flex: 1;  */
-    width: 100%;
+    flex: 1; 
+    width: 50%;
+    height:100%;
     position: relative;
     box-sizing: border-box;
     display: flex;
@@ -611,28 +616,49 @@ input[type=submit]:hover {
     align-items: center;
     background-color: #915d1e9c;
     padding-top: 3%;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+
+    
+   
 
 }
 
 .slideshow-container {
-    /* flex: 1; Take up available space */
+     flex: 1;    
     background-size: cover;
     padding: 0px;
     /* Add spacing */
     width: 50%;
+    box-sizing: border-box;
+    
+   
 
 }
-
+.dot{
+    display:inline-block;
+    background:grey;
+    padding:8px;
+    border-radius:50%;
+    margin:10px 5px;
+    }
+    
+    .active{
+    background:rgb(7, 67, 213);
+    }
+.dots{background-color: #ce9d72;}
+    
 .size {
-    width: 40em;
+    /* width: 40em; */
+    width:100%;
     height: 38em;
 }
 
-/* .container {
+.container {
   width: fit-content;
-} */
+} 
 
-/* .container label, .container input, .container textarea, .container input[type="submit"] {
+ /* .container label, .container input, .container textarea, .container input[type="submit"] {
   width: 100%;
   margin-bottom: 10px;
   background-color:#f3e5da ;
@@ -669,5 +695,13 @@ input[type=submit]:hover {
 
     .bg1 {
         height: 40vh;
+    }
+    .contact-form{
+        width: 100%;
+        flex: 100%; /* Boxes take full width on small screens */
+        padding-bottom: 0;
+        margin-bottom: 0;
+  
+        
     }
 }
